@@ -252,7 +252,7 @@ body.darkmode {
   display: flex;
   gap: 10px;
   flex-wrap: wrap;
-  
+  height: 100%;
   
   
  }
@@ -266,10 +266,11 @@ body.darkmode {
   color: inherit;
   justify-content: center;
   width: 90px;
-  height: 30px;
+  height: 40px;
   cursor: pointer;
   transition: 0.2s;
   display: flex;
+  flex-direction: row;
   border-radius: 4px;
   padding-top:4px ;
   flex-wrap: wrap;
@@ -320,11 +321,11 @@ body.darkmode {
     justify-content: center;
     align-items: center;
     gap: 20px;
-    max-width: 100%;
+    max-width: 100px;
     
   }
-  .back-color{
-    font-size: 10px;
+  #searchicon{
+    visibility: hidden;
   }
   .header-content{
     font-size: 10px;
@@ -338,10 +339,9 @@ body.darkmode {
     font-size: 10px;
   }
   .flagcontainer{
-    display: flex;
-    flex-direction: row;
+    
     gap: 12px;
-    height: 80%;
+    height: 120%;
    
   }
   .flagcontainer img{
@@ -354,16 +354,18 @@ body.darkmode {
     display: flex;
     flex-direction: column;
     gap: 0px;
+    height: 100%;
    
   }
   .flaginfo{
     display: flex;
     gap: 0px;
+    height: 100%;
   }
     .flaginfo-container{
       display: flex;
       gap: 2px;
-      
+      margin-bottom: 10px;
       flex-wrap: wrap;
     }
    main{
@@ -375,7 +377,7 @@ body.darkmode {
    }
    
    .search{
-    width: 400px;
+    width: 300px;
     display: flex;
     flex-direction: row;
     border: 1px solid black;
