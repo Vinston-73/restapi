@@ -1,0 +1,387 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+ 
+}
+.header {
+    box-shadow: 0 2px 2px 2px rgba(0, 0, 0, 0.2);
+    
+}
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  margin-inline: auto;
+  max-width: 1440px;
+  align-items: center;
+  padding-inline: 24px;
+  padding: 2% 0 2% 0;
+  
+}
+.back-color {
+  display: flex;
+  align-items: center;
+}
+.light {
+  display: none;
+}
+
+.countries-container{
+   
+   margin-inline:auto ;
+   max-width: 1440px;
+   margin-top: 3%;
+   display: flex;
+   gap:16px;
+   flex-wrap: wrap;
+   justify-content: center;
+   
+
+}
+main{
+  height: 100%;
+}
+#searchicon{
+  padding-right: 10px;
+  cursor: pointer;
+}
+.searchbar{
+  margin-inline:auto ;
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  border-radius: 15px;
+  
+}
+.countries-content{
+width:200px;
+
+text-align: center;
+
+overflow: hidden;
+border-radius:8px ;
+padding-inline: auto;
+box-shadow: 0 1px 1px 1px rgba(0, 0, 0, 0.2);
+display: inline-block;
+text-decoration-line: none;
+color: black;
+padding-bottom: 25px;
+transition: ease-in-out 0.2s;
+
+
+}
+.countries-content img{
+    width:200px;
+    height:120px
+   
+   
+}
+
+
+.card p{
+    color:hsl(200, 15%, 8%) ;
+}
+
+.countries-content:hover{
+    transform: scale(1.05);
+   
+    box-shadow: 0 2px 2px 2px rgba(0, 0, 0, 0.2);
+    
+    
+}    
+.search{
+  width: 400px;
+  display: flex;
+  flex-direction: row;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 5px 5px 5px 5px;
+}
+ .darkmode .search{
+  color: white;
+  padding: 5px 5px 5px 5px;
+  background-color: #fff;
+  outline: none;
+  border: none;
+  border: 1px solid black;
+  border-radius: 10px;
+ }
+ .darkmode #searchicon{
+  color: #121212;
+ }
+.card h3{
+    padding-top: 4%;
+    padding-bottom: 4%;
+}
+.card  b{
+  font-weight: 550;  
+  color: hsl(200, 15%, 8%);
+}
+
+body.darkmode { 
+  background-color: #121212; 
+  color: #fff;
+ } 
+.darkmode  header
+ {
+   background-color: #1f1f1f;
+ } 
+.darkmode  main
+  {
+     background-color: #121212;
+      color: white; 
+    } 
+    .darkmode .countries-content 
+    { background-color: hsl(209, 23%, 22%)f; 
+      
+      
+      box-shadow: 0 1px 1px 1px rgba(255, 255, 255, 0.2);}
+
+     .darkmode a{
+     color: #fff;
+    }
+
+    .darkmode .countries-content {
+      color:white;
+    }
+
+    .darkmode .card p {
+      color: white;
+      font-weight: 400;
+    }
+    .darkmode .card p b{
+      color: white;
+      font-weight: 700;
+    }
+
+    .darkmode .back-color .light{
+      color: white;
+      display: block;
+    }
+
+    .darkmode .back-color .dark{
+      display: none;
+      color: #fff;
+    }
+
+    .flagcontainer{
+      margin-inline: auto;
+      padding-inline: auto;
+      overflow: hidden;
+      padding-top: 20px;
+      padding-left: 10px;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      gap: 100px;
+      height: 80vh;
+      max-width: 1200px;
+    }
+  
+
+    .flaginfo h1{
+      padding-bottom: 15%;
+      
+    }
+    .flaginfos p{
+      
+    }
+
+   .flaginfos p span{
+    color:#fff;
+    padding-left: 4px;
+    }
+
+
+ .flaginfocontainer{
+  display: flex;
+  gap: 100px;
+  
+
+ }
+ .flaginfo{
+  display: flex;
+  max-width: 150px;
+  flex-direction: column;
+  row-gap: 12px;
+  
+  max-height: 200px;
+  flex-wrap: wrap;
+  column-gap: 200px;
+
+ }
+ .flaginfo-container{
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+  
+ }
+
+ .back{
+  box-shadow: 0 0 2px 2px rgba(0,0,0,0.2);
+  width: 70px;
+  height: 30px;
+  border-radius: 2px;
+  padding-top: 6px;
+  padding-left: 10px;
+  cursor: pointer;
+  margin-left: 10px;
+  transition: 0.4s;
+  display: flex;
+  gap: 5px;
+  font-weight: 500;
+  font-family: sans-serif;
+  font-size: 15px;
+
+ }
+ .back:hover{
+  transform: scale(1.1);
+ }
+
+ .bordercountries{
+  display: flex;
+  gap: 10px;
+  justify-content: flex-start;
+  
+  
+  
+ }
+ .bordercountries p{
+  
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  
+  
+  
+ }
+
+  .bordercountries a:hover{
+  transform: scale(1.1);
+ }
+ 
+ .bordercountries p a {
+  text-decoration-line: none;
+  color: inherit;
+  justify-content: center;
+  width: 90px;
+  height: 30px;
+  cursor: pointer;
+  transition: 0.2s;
+  display: flex;
+  border-radius: 4px;
+  padding-top:4px ;
+  flex-wrap: wrap;
+  box-shadow: 0 0 2px 2px rgba(0,0,0,0.1);
+ }
+.darkmode .bordercountries p a{
+  background-color: #333;
+  border-radius: 4px;
+  padding-top:4px ;
+  box-shadow: 0 0 2px 2px rgba(244, 242, 242, 0.1);
+}
+ .skeleton a{
+   /* Adjust height as needed */
+  background-color: hsl(200, 20%, 70%);
+  animation: skeleton-loading 1s infinite;
+}
+
+@keyframes skeleton-loading {
+  0% {
+    background-color: hsl(200, 20%, 70%);
+  }
+  100% {
+    background-color: hsl(200, 20%, 90%);
+  }
+}
+
+.darkmode {
+  background-color: #333;
+  color: #fff;
+}
+
+.input{
+  
+ 
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+@media (max-width:700px){
+  .filterbyregion{
+    
+  
+   height: 40px;
+  }
+  .searchbar{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    max-width: 100%;
+    
+  }
+  .back-color{
+    font-size: 10px;
+  }
+  .header-content{
+    font-size: 10px;
+    display: flex;
+    justify-content: space-between;
+    
+  }
+ 
+  .back-color-mobile-dark{
+    
+    font-size: 10px;
+  }
+  .flagcontainer{
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    height: 80%;
+   
+  }
+  .flagcontainer img{
+    max-width: 250px;
+    min-height: 200px;
+    
+
+  }
+  .flaginfocontainer{
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+   
+  }
+  .flaginfo{
+    display: flex;
+    gap: 0px;
+  }
+    .flaginfo-container{
+      display: flex;
+      gap: 2px;
+      
+      flex-wrap: wrap;
+    }
+   main{
+    
+      display: flex;
+      flex-direction: column;
+   
+    
+   }
+   
+   .search{
+    width: 400px;
+    display: flex;
+    flex-direction: row;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 5px 5px 5px 5px;
+    
+    
+   }
+}
